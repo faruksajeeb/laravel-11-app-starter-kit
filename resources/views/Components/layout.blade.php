@@ -21,9 +21,9 @@
                 <div class="hidden md:block">
                   <div class="ml-10 flex items-baseline space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <x-nav-link href="{{route('dashboard')}}" class="{{Route::is('dashboard')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</x-nav-link>
-                    <x-nav-link href="{{route('about')}}" class="{{Route::is('about')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white'}}  rounded-md px-3 py-2 text-sm font-medium">About</x-nav-link>
-                    <x-nav-link href="{{route('contact')}}" class="{{Route::is('contact')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white'}}  rounded-md px-3 py-2 text-sm font-medium">Contact</x-nav-link>
+                    <x-nav-link href="{{route('dashboard')}}" :active="Route::is('dashboard')">Dashboard</x-nav-link>
+                    <x-nav-link href="{{route('about')}}" :active="Route::is('about')">About</x-nav-link>
+                    <x-nav-link href="{{route('contact')}}" :active="Route::is('contact')">Contact</x-nav-link>
                   </div>
                 </div>
               </div>
